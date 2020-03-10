@@ -1,0 +1,41 @@
+.Formulario{
+ background: red;
+ width: 500px;
+ height: 300px;
+ position: absolute;
+ top: 50px;
+ left: 50px;
+}
+#formu{
+    position: absolute;
+    top: 80px;
+    left: 150px;   
+}
+#CajaNombre{
+    position: absolute;
+    left: 70px;
+}
+#CajaCiudad{
+    position: absolute;
+    left: 70px;
+}
+#CajaTelefono{
+    position: absolute;
+    left: 70px;
+}
+#BotonGuardar{
+    position: absolute;
+    top: 190x;
+    left: 100px;
+}
+#BotonGuardar:hover{
+background: skyblue;
+}
+#BotonEliminar{
+    position: absolute;
+    top: 190px;
+    left: 200px;
+}
+#BotonEliminar:hover{
+    background: skyblue;
+    }
