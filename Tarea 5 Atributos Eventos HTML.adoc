@@ -1,0 +1,194 @@
+= Eventos en HTML  
+
+Los eventos son una característica de los documentos HTML (presente en otros lenguajes de programación también) que permite a los autores agregar interactividad entre el sitio web y el visitante, al ejecutar programas del lado cliente cuando el visitante (u otro programa) realiza una acción. Por ejemplo, el autor puede hacer que un párrafo cambie de color de su texto cuando el visitante pose el puntero del mouse sobre el mismo.
+
+=== Lista de eventos
+
+ * onload: el evento "onload" es lanzado cuando el agente de usuario termina de cargar una página o todos los marcos en un ser de marcos. Este evento es exclusivo de los elementos HTML body yHTML framset.
+
+ * onunload: el evento "onunload" es disparado cuando el agente de usuario retira el documento de una ventana o marco. este evento es exclusivo de los elementos HTML body y HTML framset.  
+
+ * onclick: el evento "onclick" ocurre cuando se realiza un click sobre el elemento. 
+
+ * ondblclick: el evento "ondblclick" es ejecutado cuando se hace un doble click sobre el elemento. 
+
+ * onmousedown: el evento "onmousedown" es lanzado cuando el botón del mouse es presionado sobre el elemento (independientemente de que sea soltado o no). 
+
+ * onmouseup: el evento "onmouseup" es disparado cuando el botón del mouse se suelta sobre el elemento. 
+
+ * onmouseover: el evento "onmouseover" ocurre cuando el mouse es puesto sobre el elemento. 
+
+* onmousemove: el evento "onmousemove" es ejecutado cuando el mouse es movido mientras está sobre el elemento. 
+
+* onmouseout: el evento "onmouseout" es lanzado cuando el mouse se quita de encima de un documento.
+
+* onfocus: el envento "onfocus" es disparado cuando un elemento recibe el enfoque, bien sea a través del mouse o por navegación tabulada. Este evento es exclusivo de aquellos elementos que pueden recibir el enfoque: HTML a, HTML area, HTML label, HTML input, HTML select, HTML textarea, y HTML button. 
+
+* onblur: el evento "onblur" ocurre cuando el elemento pierde el enfoque bien sea a través del mouse o por navegación tabulada. Este evento es exclusivo de aquellos elementos que pueden recibir el enfoque.
+
+* onkeypress: el evento "onkeypress" es ejecutado cuando una tecla es presionada y luego soltada mientras el elemento tiene el enfoque. Este evento es exclusivo de aquellos elementos que pueden recibir el enfoque.
+
+* onkeydown: el evento "onkeydown" es lanzado cuando una tecla es presionada (independientemente de que sea solatada o no) mientras el elemento tiene el enfoque. Este evento es exclusivo de aquellos elementos que pueden recibir el enfoque.
+
+* onkeyup: el evento "onkeyup" es disparado cuando una tecla es solatada mientras el elemento tiene el enfoque. Este evento es exclusivo de aquellos elementos que pueden recibir el enfoque.
+
+* onsubmit: el evento "onsubmit" ocurre cuando el formulario es enviado. Este evento es exclusivo del elemento HTML form.
+
+* onreset: el evento "onreset" es ejecutado cuando el formulario es reestablecido a sus valores por defecto. Este evento es exclusivo del elemento HTML form.
+
+* onselect: el evento "onselect" es lanzado cuando un usuario selcciona texto en un campo de texto. Este evento es exclusivo de los elementos HTML input y HTML textarea.
+
+* onchange: el evento "onchange" es disparado cuando un control pierde el enfoque y su valor ha sido modificado desde que recibió el enfoque por última vez. Este evento es exclusivo de los elementos HTML input, HTML select y HTML textarea.
+
+=== Atributos de ventana de eventos 
+
+==== Eventos activados por el objeto de ventana (se aplica a la etiqueta <body>)
+
+* onafterprint= Script para ser ejecutado después de que el documento se imprime
+
+* onbeforeprint= Script para ser ejecutado antes de que el documento se imprime
+
+* onbeforeunload= Script para ser ejecutado antes de que el documento se descarga
+
+* onerror= Script para ser ejecutado cuando se produzca un error
+
+* onhaschange= Script para ser ejecutado cuando el documento ha cambiado
+
+* onload= Los incendios después de la página termine de cargarse
+
+* onmessage= Script para ser ejecutado cuando el mensaje se activa
+
+* onoffline= Script para ser ejecutado cuando el documento se queda sin conexión
+
+* ononline= Script para ser ejecutado cuando el documento se pone en línea
+
+* onpagehide= Script que se ejecuta cuando la ventana está oculta
+
+* onpageshow= Script que se ejecuta cuando la ventana se hace visible
+
+* onpopstate= Script para ser ejecutado cuando la ventana cambia de historia
+
+* onred= Script para ser ejecutado cuando el documento realiza una puesta al día
+
+* OnResizeNuevo= Se activa cuando la ventana del navegador cambia de tamaño
+
+* onstorage= Script para ser ejecutado cuando un área de almacenamiento Web se 
+
+* onundo= Script para ser ejecutado cuando el documento realiza un deshacer
+
+* onunload= Se dispara una vez que una página se carga (o la ventana del navegador se ha cerrado)
+
+=== Eventos de formulario
+
+===== Eventos activados por acciones dentro de un formulario HTML (se aplica a casi todos los elementos HTML, pero es la más utilizada en los elementos de formulario)
+
+* onblur= Dispara el momento en que el elemento pierde el foco
+
+* onchange= Fuegos el momento en que el valor del elemento se cambia
+
+* OnContextMenu= Script para ser ejecutado cuando un menú contextual se activa
+
+* onfocus= Fuegos el momento en que el elemento obtiene el foco
+
+* onformchange= Script para ser ejecutado cuando se cambia de forma
+
+* oninput= Script para ser ejecutado cuando un elemento recibe la entrada del usuario
+
+* oninvalid= Script para ser ejecutado cuando un elemento no es válido
+
+* onreset= Se activa cuando el botón de reinicio en una forma que se hace clic No es compatible con HTML5
+
+* onselect= Los incendios después de algún texto ha sido seleccionado en un elemento
+
+* onSubmit= Se activa cuando se envía un formulario
+
+=== Eventos de teclado
+
+* onkeydown= Se activa cuando un usuario está presionando una tecla
+
+* onkeypress= Se activa cuando un usuario pulsa una tecla
+
+* onkeyup= Se activa cuando el usuario suelta una tecla
+
+=== Eventos del mouse
+
+* onclick= Los incendios en un clic de ratón sobre el elemento
+
+* ondblclick= Los incendios de un ratón doble clic en el elemento
+
+* ondrag= Script para ser ejecutado cuando un elemento se arrastra
+
+* ondragend= Script que se ejecuta al final de una operación de arrastre
+
+* ondragenter= Script para ser ejecutado cuando un elemento ha sido arrastrado a un destino válido
+
+* OnDragLeave= Script para ser ejecutado cuando un elemento deja un destino válido
+
+* ondragover= Script para ser ejecutado cuando un elemento está siendo arrastrado sobre un destino válido
+
+* ondragstart= Script para ser ejecutado en el inicio de una operación de arrastre
+
+* ondrop= Script para ser ejecutado cuando el elemento arrastrado se redujo
+
+* onmousedown= Se activa cuando el botón del ratón se presiona hacia abajo sobre un elemento
+
+* onmousemove= Se activa cuando el puntero del ratón se mueve sobre un elemento
+
+* onmouseout= Se activa cuando el puntero del ratón se mueve fuera de un elemento
+
+* onmouseover= Se activa cuando el puntero del ratón se mueve sobre un elemento
+
+* onmouseup= Se activa cuando el botón del ratón se suelta sobre un elemento
+
+* OnMouseWheel= Script para ser ejecutado cuando la rueda del ratón se está rotando
+
+* OnScroll= Script para ser ejecutado cuando un elemento de la barra de desplazamiento se está desplazando
+
+=== Medios Eventos
+===== Eventos activados por medios como videos, imágenes y audio (se aplica a todos los elementos HTML, pero es más común en los elementos de los medios de comunicación, como <audio>, <embed>, <img>, <object> y <video>)
+
+* OnAbort= Script para ser ejecutado en abortar
+
+* oncanplay= Script para ser ejecutado cuando un archivo está listo para empezar a jugar (si ha tamponada suficiente para empezar)
+
+* oncanplaythrough= Script para ser ejecutado cuando un archivo se puede reproducir todo el camino hasta el final sin pausas para el almacenamiento temporal
+
+* ondurationchange= Script para ser ejecutado cuando la longitud de los cambios en los medios
+
+* onemptied= Script para ser ejecutado cuando algo malo sucede y el archivo es de repente no está disponible (como se desconecta inesperadamente)
+
+* onended= Script para ser ejecutado cuando el medio tiene llegar al final (un evento útil para mensajes como "gracias por escucharme")
+
+* onerror= Script que se ejecuta cuando se produce un error cuando el archivo está siendo cargado
+
+* onloadeddata= Script que se ejecuta cuando se carga la información de medios
+
+* onloadedmetadata= Script para ser ejecutado cuando los metadatos (como dimensiones y duración) se cargan
+
+* onLoadStart= Script que se ejecute al igual que el archivo empieza a cargarse antes de que algo está realmente cargado
+
+* OnPause= Script para ser ejecutado cuando los medios de comunicación está en pausa, ya sea por el usuario o mediante programación
+
+* onplay= Script para ser ejecutado cuando los medios de comunicación está listo para empezar a jugar
+
+* onplaying= Script para ser ejecutado cuando los medios de comunicación en realidad ha comenzado a jugar
+
+* OnProgress= Script para ser ejecutado cuando el navegador está en el proceso de obtención de los datos de medios
+
+* onratechange= Grafía que se ejecute cada vez que cambia la velocidad de reproducción (como cuando un usuario cambia a una velocidad lenta o modo de avance rápido)
+
+* onreadystatechange= Grafía que se ejecute cada vez que cambia el estado preparado (estado preparado un seguimiento del estado de los datos de los medios de comunicación)
+
+* onseeked= Script para ser ejecutado cuando el atributo de búsqueda se establece en false indica que la búsqueda ha terminado
+
+* onseeking= Script para ser ejecutado cuando el atributo de búsqueda se establece en true indica que la búsqueda está activo
+
+* onstalled= Script para ser ejecutado cuando el navegador no es capaz de recuperar los datos de los medios por cualquier motivo
+
+* onsuspend= Script para ser ejecutado cuando ir a buscar los datos de medios se detiene antes de que esté completamente cargado por cualquier razón
+
+* ontimeupdate= Script para ser ejecutado cuando la posición de juego ha cambiado (como cuando el usuario avanza rápidamente hacia un punto diferente en los medios de comunicación)
+
+* onvolumechange= Grafía que se ejecute cada vez que se cambia el volumen que (incluye ajuste el volumen a "mute")
+
+* onwaiting= Script para ser ejecutado cuando los medios de comunicación se ha detenido, pero se espera que reanude (como cuando los medios de comunicación hace una pausa para amortiguar más datos)
